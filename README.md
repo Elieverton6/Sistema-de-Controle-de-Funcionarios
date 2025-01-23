@@ -2,19 +2,21 @@
 
 ## Descrição do Projeto
 
-Este sistema foi desenvolvido para gerenciar informações sobre empresas e funcionários. Ele permite que você faça o cadastro de empresas e funcionários, visualize dados, edite informações e exporte relatórios. Além disso, o sistema permite fazer login, com autenticação via email e senha, e conta com um dashboard para visualização de dados de forma interativa.
+Este sistema foi desenvolvido para gerenciar informações de empresas e funcionários. Com ele, é possível realizar o cadastro, a edição e a exclusão de dados, bem como exportar relatórios. Além disso, o sistema inclui autenticação via email e senha e um dashboard interativo para visualização de informações.
 
 ---
 
 ## Funcionalidades
 
-1. **Cadastro de Empresas**: Cadastro de empresas no sistema.
-2. **Cadastro de Funcionários**: Cadastro de funcionários, com dados como nome, CPF, RG, email, salário e empresa associada.
-3. **Edição de Funcionários**: Atualização das informações dos funcionários cadastrados, incluindo salário e bonificação.
-4. **Exclusão de Funcionários**: Remoção de funcionários do sistema.
-5. **Exportação de Funcionários**: Exportação dos dados dos funcionários para um arquivo PDF.
-6. **Autenticação**: Login de usuários com email e senha, além da funcionalidade de logout.
-7. **Cálculo de Bonificação**: Bonificação para funcionários com base no tempo de serviço (1 ano = 10% do salário, 5 anos ou mais = 20% do salário).
+- **Cadastro de Empresas:** Adicionar empresas ao sistema.  
+- **Cadastro de Funcionários:** Inserir dados como nome, CPF, RG, email, salário e empresa associada.  
+- **Edição de Funcionários:** Atualizar informações dos funcionários, incluindo salário e bonificações.  
+- **Exclusão de Funcionários:** Remover funcionários do sistema.  
+- **Exportação de Funcionários:** Gerar um relatório dos funcionários em formato PDF.  
+- **Autenticação:** Login e logout seguro com email e senha.  
+- **Cálculo de Bonificação:** Aplicação de bonificações com base no tempo de serviço:  
+  - 1 ano: 10% do salário.  
+  - 5 anos ou mais: 20% do salário.
 
 ---
 
@@ -35,68 +37,71 @@ Este sistema foi desenvolvido para gerenciar informações sobre empresas e func
 │   │   ├── cadastro_funcionario.php
 │   │   ├── editar_funcionario.php
 │   │   └── exportar_funcionarios.php
-│   ├── config/                # Arquivos de configuração
+│   ├── config/                # Configurações do sistema
 │   │   └── db.php
-│   ├── public/                # Arquivos públicos (CSS, JS, imagens)
+│   ├── public/                # Recursos públicos (CSS, JS, imagens)
 │   │   ├── css/
 │   │   ├── js/
 │   │   └── images/
-├── .htaccess                  # Arquivo de configuração do Apache
-├── index.php                  # Arquivo de entrada principal
-└── README.md                  # Este arquivo
+├── .htaccess                  # Configuração do servidor Apache
+├── index.php                  # Entrada principal da aplicação
+└── README.md                  # Arquivo de documentação
 ```
-Instalação
-Pré-requisitos:
 
-PHP (versão 7.4 ou superior)
-Composer instalado
-Servidor web (Apache ou Nginx)
-Banco de dados MySQL
-Passos para configurar o projeto:
+---
 
-a. Clone o repositório:
+## Instalação
 
-bash
-Copiar
-Editar
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
-b. Instale as dependências com o Composer:
+### Pré-requisitos
 
-bash
-Copiar
-Editar
-composer install
-c. Configure o arquivo de banco de dados:
+- PHP (versão 7.4 ou superior).  
+- Composer instalado.  
+- Servidor web (Apache ou Nginx).  
+- Banco de dados MySQL configurado.
 
-Abra o arquivo app/config/db.php e configure as credenciais do banco de dados.
-d. Configure permissões (se necessário):
+### Passos para Configuração
 
-bash
-Copiar
-Editar
-chmod -R 755 storage
-e. Inicie o servidor local:
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   cd seu-repositorio
+   ```
 
-bash
-Copiar
-Editar
-php -S localhost:8000 -t public
-Dependências
-Este projeto utiliza as seguintes dependências:
+2. Instale as dependências com o Composer:
+   ```bash
+   composer install
+   ```
 
-Composer: Para gerenciamento de pacotes.
-FPDF: Para geração de arquivos PDF.
-Setasign: Biblioteca auxiliar para PDFs.
-Certifique-se de instalar todas as dependências usando o Composer.
+3. Configure o banco de dados:
+   - Edite o arquivo `app/config/db.php` e insira as credenciais do banco de dados.
 
-Contato
-Para dúvidas ou sugestões, entre em contato:
+4. Ajuste permissões (se necessário):
+   ```bash
+   chmod -R 755 storage
+   ```
 
-Email: seu-email@exemplo.com
-GitHub: seu-usuario
-perl
-Copiar
-Editar
+5. Inicie o servidor local:
+   ```bash
+   php -S localhost:8000 -t public
+   ```
 
-Você pode copiar e colar esse conteúdo diretamente no seu arquivo `README.md`. Ajuste os links e informações de contato conforme necessário.
+---
+
+## Dependências
+
+Este projeto utiliza as seguintes bibliotecas:
+
+- **Composer:** Gerenciamento de pacotes.  
+- **FPDF:** Criação de arquivos PDF.  
+- **Setasign:** Ferramentas auxiliares para geração de PDFs.
+
+Certifique-se de instalar todas as dependências via Composer.
+
+---
+
+## Contato
+
+- **Email:** [seu-email@exemplo.com](mailto:seu-email@exemplo.com)  
+- **GitHub:** [seu-usuario](https://github.com/seu-usuario)  
+
+---
