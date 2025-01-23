@@ -101,7 +101,7 @@ Certifique-se de instalar todas as dependências via Composer.
 
 ## Contato
 
-- **Email:** [seu-email@exemplo.com](mailto:seu-email@exemplo.com)  
-- **GitHub:** [seu-usuario](https://github.com/seu-usuario)  
+- **Email:** [swgamerbr406@gmail.com](mailto:swgamerbr406@gmail.com)  
+- **LinkedIn:** [elieverton-gomes](https://www.linkedin.com/in/elieverton-gomes/)  
 
 ---
