@@ -44,6 +44,7 @@ Este sistema foi desenvolvido para gerenciar informações sobre empresas e func
 ├── .htaccess                  # Arquivo de configuração do Apache
 ├── index.php                  # Arquivo de entrada principal
 └── README.md                  # Este arquivo
+```
 Instalação
 Pré-requisitos:
 
